@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cryptography Visualizer</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h2 class="algoName">Monoalphabetic Cipher</h2>
+      <p class="algoDesc">
+        In this substitution cipher, the same letters of the plaintext are
+        always replaced by the same letters in the ciphertext. This technique
+        uses a random key for every single letter of the alphabet(therefore,
+        total of 26 keys).
+      </p>
+
+      <textarea
+        placeholder="Enter text for encryption in here"
+        id="textToEncrypt"
+        class="input"
+      ></textarea>
+      <input type="button" value="Visualize" id="encryptButton" class="input" />
+      <div class="container">
+        <h3 class="io">Random plaintext–ciphertext pair:</h3>
+        <div id="keyContainer"></div>
+      </div>
+      <div class="container">
+        <h3 class="io">Plaintext:</h3>
+        <div id="inputContainer"></div>
+      </div>
+      <div class="container">
+        <h3 class="io">Ciphertext:</h3>
+        <div id="outputContainer"></div>
+      </div>
+    </div>
+    <script src="mono.js"></script>
+  </body>
+</html>

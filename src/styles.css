@@ -1,0 +1,77 @@
+* {
+  transition: 0.5s;
+}
+body {
+  font-family: sans-serif;
+}
+.main {
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+.desc {
+  text-align: center;
+}
+.algoName {
+  text-transform: uppercase;
+  text-align: center;
+  color: #3a8df3;
+}
+.cell {
+  width: 10px;
+  height: 15px;
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: all 2s ease;
+}
+
+.cellOut {
+  background: #bbb;
+}
+
+.cell.anim {
+  background: #333;
+  color: #fff;
+}
+
+.input {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+}
+.input[type="button"] {
+  width: 200px;
+  background: #3a8df3;
+  border: 0;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.input[type="button"]:hover {
+  background: #333;
+}
+.container {
+  background: #f7f7f7;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #eee;
+}
+#inputContainer,
+#outputContainer,
+#keyContainer,
+.cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.io {
+  color: #333;
+}

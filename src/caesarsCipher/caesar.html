@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cryptography Visualizer</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <h2 class="algoName">Caesar's Cipher</h2>
+      <p class="algoDesc">
+        Caesar cipher is the easiest encryption technique. Here, each letter of
+        the alphabet is replaced by a letter a specific distance away from that
+        letter. Suppose we call this distance the key. The default key value is
+        3. When we reach the last letter, Z, it wraps to the beginning of the
+        alphabet.
+      </p>
+
+      <textarea
+        placeholder="Enter text for encryption in here"
+        id="textToEncrypt"
+        class="input"
+      ></textarea>
+      <input
+        class="input"
+        type="number"
+        placeholder="Enter key. Default is 3"
+        id="key"
+      />
+      <input type="button" value="Visualize" id="encryptButton" class="input" />
+      <div class="container">
+        <h3 class="io">Plaintext:</h3>
+        <div id="inputContainer"></div>
+      </div>
+      <div class="container">
+        <h3 class="io">Ciphertext:</h3>
+        <div id="outputContainer"></div>
+      </div>
+    </div>
+    <script src="caesar.js"></script>
+  </body>
+</html>
